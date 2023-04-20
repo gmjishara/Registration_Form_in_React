@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import MainDiv from "./Components/MainDiv";
+import Box from '@mui/material/Box';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Box
+      sx={{
+        paddingTop:10,
+        width: '100vw',
+        height: '100vh',
+        backgroundColor: '#4caf50',
+      }}
+    >
+      <MainDiv/>
+      </Box>
     </div>
   );
 }
+
 
 export default App;
